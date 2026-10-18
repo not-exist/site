@@ -1,0 +1,10 @@
+{
+  "name": "site",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.1"
+  }
+}
