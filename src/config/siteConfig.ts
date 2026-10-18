@@ -48,7 +48,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "基于 Firefly 主题的个人静态博客",
 
 	// 站点 URL
-	site_url: "https://your-subdomain.workers.dev",
+	site_url: "https://log.ilnbam1.xyz",
 
 	// 站点描述
 	description:
