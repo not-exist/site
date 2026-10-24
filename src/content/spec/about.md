@@ -4,7 +4,7 @@
 
 ## 🛠️ 关于本站
 
-本站使用 [Astro](https://astro.build/) 框架 + [Firefly](https://github.com/CuteLeaf/Firefly) 主题构建，是一款纯静态博客，部署在 Cloudflare Workers 上。
+本站使用 [Astro](https://astro.build/) 框架 + [Fuwari](https://github.com/saicaca/fuwari) 主题构建，是一款纯静态博客，部署在 Cloudflare Workers 上。
 
 （占位内容：这里可以介绍你自己、你的技术栈、你的经历等等。）
 

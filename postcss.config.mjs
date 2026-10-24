@@ -1,9 +1,11 @@
 import postcssImport from 'postcss-import';
-import postcssNesting from 'postcss-nesting';
+import postcssNesting from 'tailwindcss/nesting/index.js';
+import tailwindcss from 'tailwindcss';
 
 export default {
     plugins: {
-        'postcss-import': postcssImport,
-        'postcss-nesting': postcssNesting,
+        'postcss-import': postcssImport,          // to combine multiple css files
+        'tailwindcss/nesting': postcssNesting,
+        tailwindcss: tailwindcss,
     }
 };

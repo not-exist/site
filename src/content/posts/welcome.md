@@ -1,16 +1,14 @@
 ---
 title: 欢迎来到我的博客
 published: 2026-10-18
-pinned: true
-description: 第一篇占位文章，演示 Firefly 博客的文章格式。
+description: 第一篇占位文章，演示 Fuwari 博客的文章格式。
 tags: [占位, 公告]
 category: 公告
-slug: welcome
 ---
 
 这是一篇**占位文章**。
 
-博客已通过 Astro + Firefly 主题搭建完成，并部署在 Cloudflare Workers 上。
+博客已通过 Astro + Fuwari 主题搭建完成，并部署在 Cloudflare Workers 上。
 
 后续这里会发布：
 
