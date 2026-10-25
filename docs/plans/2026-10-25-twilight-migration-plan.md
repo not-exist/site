@@ -52,3 +52,10 @@
 ## 回滚
 
 `git revert` 迁移提交，或从 `firefly-6.16.8-archive` tag 重建 main。
+
+## 执行记录（2026-10-25）
+
+- 迁移以单个提交完成并合入 main，Firefly 版本存档于 tag `firefly-6.16.8-archive`。
+- 迁移期间 origin/main 被并行推进为 Fuwari 适配版（含新文章《痛苦是/不是构成生命意义的必要条件》与 wrangler devDependency 恢复）。处理：以 `-s ours` 策略合并保留 Twilight 文件树并接入历史，随后单独移植新文章（`10-24-a.md`，frontmatter 天然兼容）与 wrangler devDependency（Cloudflare 部署命令 `pnpm exec wrangler deploy` 需要）。
+- 实际与原计划的偏差：导航扁平化（主页/归档/友链/留言/关于）；favicon 沿用 Twilight 默认；OG 图片生成保持关闭；`tsconfig.json` 增加 `skipLibCheck`，`type-check` 移除 `--isolatedDeclarations`（上游代码不满足该模式）。
+- 验证：`pnpm check` / `type-check` / `build` 通过；preview 下 `/`、`/posts/10-16-a/`、`/posts/10-24-a/`、`/posts/welcome/`、`/about/`、`/friends/`、`/guestbook/`、`/archive/`、RSS/Atom 均 200，RSS 3 条目，sitemap 正确。
