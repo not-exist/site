@@ -9,6 +9,8 @@ description: "关于 not-exist 与本站"
 
 本站使用 [Astro](https://astro.build/) 框架 + [Twilight](https://github.com/Spr-Aachen/Twilight) 主题构建，是一款纯静态博客，部署在 Cloudflare Workers 上。
 
+站点的壁纸、头像与图标素材取自 [星遐蝶梦](https://blog.casto.top) 的遐蝶主题化配置，原素材版权归原作者所有，仅作个人非商用展示。
+
 （占位内容：这里可以介绍你自己、你的技术栈、你的经历等等。）
 
 ---

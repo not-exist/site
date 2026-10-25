@@ -43,6 +43,7 @@ const coverMargin = "12px";
 const coverGap = "12px";
 const showContentOnCover = postConfig.card.cover.showContent;
 const showDefaultCover = postConfig.card.cover.showDefaultCover;
+const defaultCover = postConfig.card.cover.defaultCover;
 const renderCoverArea = hasCover || showDefaultCover;
 const titleSize = postConfig.card.titleSize;
 
@@ -100,6 +101,10 @@ const defaultCoverGradient = "linear-gradient(135deg, color-mix(in oklch, oklch(
             </div>
             {hasCover ? (
                 <ImageWrapper src={cover} basePath={imageBaseDir} alt="Cover Image of the Post"
+                    class="w-full h-full">
+                </ImageWrapper>
+            ) : !entry.data.encrypted && defaultCover ? (
+                <ImageWrapper src={defaultCover} alt="Default Cover Image"
                     class="w-full h-full">
                 </ImageWrapper>
             ) : (

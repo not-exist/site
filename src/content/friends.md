@@ -8,7 +8,7 @@ description: "与优秀的朋友们一起成长"
 欢迎交换友链！本站信息如下，可直接复制使用：
 
 - **站点名称**：not-exist 的博客
-- **站点描述**：占位描述：飞萤之火自无梦的长夜亮起，绽放在终竟的明天。
+- **站点描述**：not-exist 的个人博客，记录技术与生活。
 - **站点链接**：https://log.ilnbam1.xyz
 - **头像链接**：https://weavatar.com/avatar/?d=mp&s=640
 - **联系邮箱**：not.exist.2011@gmail.com

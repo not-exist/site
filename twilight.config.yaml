@@ -42,7 +42,7 @@ site:
     # 主题色配置
     themeColor:
         # 主题色的默认色相 (范围从 0 到 360)
-        hue: 165
+        hue: 250
     # 默认主题 ("system" 跟随系统 | "light" 浅色 | "dark" 深色)
     defaultTheme: "system"
     # 壁纸配置
@@ -53,20 +53,14 @@ site:
         src:
             # 桌面壁纸图片 (相对于 /public 目录; 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播)
             desktop:
-                - "/assets/images/wallpapers/d1.avif"
-                - "/assets/images/wallpapers/d2.avif"
-                - "/assets/images/wallpapers/d3.avif"
-                - "/assets/images/wallpapers/d4.avif"
-                - "/assets/images/wallpapers/d5.avif"
-                - "/assets/images/wallpapers/d6.avif"
+                - "/assets/images/wallpapers/d1.webp"
+                - "/assets/images/wallpapers/d2.webp"
+                - "/assets/images/wallpapers/d3.webp"
             # 移动壁纸图片 (相对于 /public 目录)
             mobile:
-                - "/assets/images/wallpapers/m1.avif"
-                - "/assets/images/wallpapers/m2.avif"
-                - "/assets/images/wallpapers/m3.avif"
-                - "/assets/images/wallpapers/m4.avif"
-                - "/assets/images/wallpapers/m5.avif"
-                - "/assets/images/wallpapers/m6.avif"
+                - "/assets/images/wallpapers/m1.webp"
+                - "/assets/images/wallpapers/m2.webp"
+                - "/assets/images/wallpapers/m3.webp"
         # 壁纸位置 ('top' | 'center' | 'bottom')
         position: "center"
         # 轮播配置 (fullscreen 和 banner 模式共享)
@@ -152,7 +146,10 @@ site:
             # 动画周期 (s)
             interval: 1.5
     # favicon 配置
-    favicon: []
+    favicon:
+        - src: "/favicon/xiadie-icon.png"
+          sizes: "32x32"
+        - src: "/favicon/xiadie-icon.webp"
     # bangumi 配置
     bangumi:
         # 用户 ID
@@ -269,7 +266,7 @@ sidebar:
 # 资料配置
 profile:
     # 头像配置 (相对于 /public 目录)
-    avatar: "/assets/images/avatar.avif"
+    avatar: "/assets/images/avatar.webp"
     # 信息配置
     name: "not-exist"
     # 简介配置
@@ -326,6 +323,8 @@ post:
             showContent: true
             # 无指定封面时是否显示默认封面
             showDefaultCover: true
+            # 无指定封面时使用的默认封面图 (留空则回退为主题色渐变)
+            defaultCover: "/assets/images/wallpapers/d1.webp"
         # 标题大小 (Tailwind 文本大小类，例如 "text-3xl")
         titleSize: "text-2xl"
     # 显示"上次编辑"卡片
@@ -370,8 +369,8 @@ footer:
 
 # 粒子特效配置
 particle:
-    # 启用粒子特效
-    enable: true
+    # 启用粒子特效 (已由移植的樱花飘落特效替代，见 src/components/sakura)
+    enable: false
     # 粒子数量
     particleNum: 12
     # 粒子越界限制次数，-1为无限循环

@@ -376,6 +376,8 @@ export type PostConfig = {
             showContent: boolean;
             // 无指定封面时是否显示默认封面
             showDefaultCover: boolean;
+            // 无指定封面时使用的默认封面图 (留空则回退为主题色渐变)
+            defaultCover?: string;
         };
         // 标题大小 (Tailwind 文本大小类，例如 "text-3xl")
         titleSize: string;

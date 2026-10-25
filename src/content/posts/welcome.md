@@ -9,7 +9,7 @@ category: 公告
 
 这是一篇**占位文章**。
 
-博客已通过 Astro + Firefly 主题搭建完成，并部署在 Cloudflare Workers 上。
+博客已通过 Astro + Twilight 主题搭建完成，并部署在 Cloudflare Workers 上。
 
 后续这里会发布：
 
