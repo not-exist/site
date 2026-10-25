@@ -2,10 +2,9 @@
 title: 欢迎来到我的博客
 published: 2026-10-18
 pinned: true
-description: 第一篇占位文章，演示 Firefly 博客的文章格式。
+description: 第一篇占位文章，演示 Twilight 博客的文章格式。
 tags: [占位, 公告]
 category: 公告
-slug: welcome
 ---
 
 这是一篇**占位文章**。
